@@ -17,20 +17,7 @@
   <script src="js/scripts.js"></script>
 
 
-<h1>Lab 4: Spread Simulation with FUTURES and PoPS</h1>
-
-<h2>FUTURES Simulation</h2>
-
-<p></p>
-
-<table>
-    <tr>
-        <td>Scenario 1: Low Incentive</td>
-        <td>Scenario 2: Moderate Incentive ( = 2.5)</td>
-        <td>Scenario 3: High Incentive ( = )</td>
-    </tr>
-</table>
-
+<h1>Spread Simulation: Sudden Oak Death in in the Rouge River-Siskiyou National Forest region of western Oregon, using PoPS in GRASS GIS</h1>
 <p></p>
 
 <h2>PoPs Simulation</h2>
@@ -38,25 +25,25 @@
 <p></p>
 <table>
     <tr>
-        <td><img src="https://arielsaffer.github.io/grass-mapbox/gifs/pops_spread_default.gif"><br>Spread with default parameters</td>
-        <td><img src="https://arielsaffer.github.io/grass-mapbox/gifs/pops_spread_east.gif"><br>... with wind direction = East</td>
-        <td><img src="https://arielsaffer.github.io/grass-mapbox/gifs/pops_spread_kernel.gif"><br>... with dispersal Kernel</td>
+        <td>Spread with default parameters (R = 1.6, direction = NE, dist = 400, direction strength = 3) <br><img src="https://arielsaffer.github.io/grass-mapbox/gifs/pops_spread_default.gif"></td>
+        <td>... with wind direction = East, direction strength=10<br><img src="https://arielsaffer.github.io/grass-mapbox/gifs/pops_spread_east.gif"></td>
     </tr>
     <tr>
-        <td><img src="https://arielsaffer.github.io/grass-mapbox/gifs/pops_spread_cauchy.gif"><br>... with Cauchy dispersal Kernel</td>
-        <td><img src="https://arielsaffer.github.io/grass-mapbox/gifs/pops_spread_rrate3_NE.gif"><br>... with reproduction rate = 3</td>
+        <td>... with Cauchy dispersal Kernel and default parameters<br><img src="https://arielsaffer.github.io/grass-mapbox/gifs/pops_spread_cauchy.gif"></td>
+        <td>... with reproduction rate, R = 3<br><img src="https://arielsaffer.github.io/grass-mapbox/gifs/pops_spread_rrate3_NE.gif"></td>
     </tr>
 </table>
 
 <p></p>
 
-<h3>Effect of treatment scenarios on probability forecasts</h3>
+<h3>Effect of treatment scenarios on probability forecasts (all run with default parameters: R = 1.6, direction = NE, dist = 400, direction strength = 3)</h3>
 <table>
     <tr>
-        <td><img src="https://arielsaffer.github.io/grass-mapbox/gifs/pops_spread_treatmentA.gif"><br>Treatment A: Buffer = </td>
-        <td><img src="https://arielsaffer.github.io/grass-mapbox/gifs/pops_spread_treatmentB.gif"><br>Treatment B: Buffer = </td>
-        <td><img src="https://arielsaffer.github.io/grass-mapbox/gifs/pops_spread_treatmentC.gif"><br>Treatment C: Barrier = </td>
-        <td><img src="https://arielsaffer.github.io/grass-mapbox/gifs/pops_spread_treatmentAC.gif"><br>Treatment D: Buffer @ + Barrier @ </td>
+        <td>Treatment A: Buffer = <br><img src="https://arielsaffer.github.io/grass-mapbox/gifs/pops_spread_treatmentA.gif"></td>
+        <td>Treatment B: Buffer = <br><img src="https://arielsaffer.github.io/grass-mapbox/gifs/pops_spread_treatmentB.gif"></td>
+    </tr><tr>
+        <td>Treatment C: Barrier = <br><img src="https://arielsaffer.github.io/grass-mapbox/gifs/pops_spread_treatmentC.gif"></td>
+        <td>Treatment D: Buffer @ + Barrier @ <br><img src="https://arielsaffer.github.io/grass-mapbox/gifs/pops_spread_treatmentAC.gif"></td>
     </tr>
 </table>
 <p></p>

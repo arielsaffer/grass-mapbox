@@ -17,36 +17,37 @@
   <script src="js/scripts.js"></script>
 
 
-<h1>Spread Simulation: Sudden Oak Death in in the Rouge River-Siskiyou National Forest region of western Oregon, using PoPS in GRASS GIS</h1>
+<h1>Spread Simulation</h1>
+<h2>Sudden Oak Death in in the Rouge River-Siskiyou National Forest region of western Oregon, using PoPS in GRASS GIS</h2>
 <p></p>
-
-<h2>PoPs Simulation</h2>
-<h3>Effect of varying parameters on spread forecasts</h3>
+<h3>Effect of varying dispersal parameters on spread forecasts</h3>
+Color scale corresponds to average number of predicted infections in a cell (non-zero)
 <p></p>
 <table>
     <tr>
-        <td>Spread with default parameters (R = 1.6, direction = NE, dist = 400, direction strength = 3) <br><img src="https://arielsaffer.github.io/grass-mapbox/gifs/pops_spread_default.gif"></td>
+        <td>Spread with default parameters (R = 1.6, direction = NE, dist = 242, direction strength = 3) <br><img src="https://arielsaffer.github.io/grass-mapbox/gifs/pops_spread_default.gif"></td>
         <td>... with wind direction = East, direction strength=10<br><img src="https://arielsaffer.github.io/grass-mapbox/gifs/pops_spread_east.gif"></td>
     </tr>
     <tr>
         <td>... with Cauchy dispersal Kernel and default parameters<br><img src="https://arielsaffer.github.io/grass-mapbox/gifs/pops_spread_cauchy.gif"></td>
-        <td>... with reproduction rate, R = 3<br><img src="https://arielsaffer.github.io/grass-mapbox/gifs/pops_spread_rrate3_NE.gif"></td>
+        <td>... with reproduction rate, R = 3.0<br><img src="https://arielsaffer.github.io/grass-mapbox/gifs/pops_spread_rrate3_NE.gif"></td>
     </tr>
 </table>
 
 <p></p>
 
-<h3>Effect of treatment scenarios on probability forecasts (all run with default parameters: R = 1.6, direction = NE, dist = 400, direction strength = 3)</h3>
+<h3>Effect of treatment scenarios on probability forecasts (all run with default parameters: R = 1.6, direction = NE, dist = 242, direction strength = 3)</h3>
+Color corresponds to the percent probability of infection (non-zero) in a given cell
+<p></p>
 <table>
     <tr>
-        <td>Treatment A: Buffer = <br><img src="https://arielsaffer.github.io/grass-mapbox/gifs/pops_spread_treatmentA.gif"></td>
-        <td>Treatment B: Buffer = <br><img src="https://arielsaffer.github.io/grass-mapbox/gifs/pops_spread_treatmentB.gif"></td>
+        <td>Treatment A: Buffer = 200m around known infections on Dec. 31, 2019<br><img src="https://arielsaffer.github.io/grass-mapbox/gifs/pops_spread_treatmentA.gif"></td>
+        <td>Treatment B: Buffer = 500m around known infections on Dec. 31, 2019<br><img src="https://arielsaffer.github.io/grass-mapbox/gifs/pops_spread_treatmentB.gif"></td>
     </tr><tr>
-        <td>Treatment C: Barrier = <br><img src="https://arielsaffer.github.io/grass-mapbox/gifs/pops_spread_treatmentC.gif"></td>
-        <td>Treatment D: Buffer @ + Barrier @ <br><img src="https://arielsaffer.github.io/grass-mapbox/gifs/pops_spread_treatmentAC.gif"></td>
+        <td>Treatment C: Barrier = 1 km wide barrier (75% host removal) in 2019<br><img src="https://arielsaffer.github.io/grass-mapbox/gifs/pops_spread_treatmentC.gif"></td>
+        <td>Treatment D: Buffer A (200m) on Dec. 31, 2019 and Barrier C (1km width) on Dec. 31, 2021 <br><img src="https://arielsaffer.github.io/grass-mapbox/gifs/pops_spread_treatmentAC.gif"></td>
     </tr>
 </table>
 <p></p>
-
 </body>
 </html>
